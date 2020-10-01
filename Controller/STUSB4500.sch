@@ -1,0 +1,347 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D_Zener D?
+U 1 1 5F5864CF
+P 2700 2700
+AR Path="/5F5864CF" Ref="D?"  Part="1" 
+AR Path="/5F584CBF/5F5864CF" Ref="D301"  Part="1" 
+F 0 "D301" H 2700 2917 50  0000 C CNN
+F 1 "ESDA25P35" H 2700 2826 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 2700 2700 50  0001 C CNN
+F 3 "~" H 2700 2700 50  0001 C CNN
+F 4 "ESDA25P35" H 2700 2825 50  0001 C CNN "Part"
+	1    2700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5864D5
+P 3100 2600
+AR Path="/5F5864D5" Ref="#PWR?"  Part="1" 
+AR Path="/5F584CBF/5F5864D5" Ref="#PWR0301"  Part="1" 
+F 0 "#PWR0301" H 3100 2350 50  0001 C CNN
+F 1 "GND" H 3105 2427 50  0000 C CNN
+F 2 "" H 3100 2600 50  0001 C CNN
+F 3 "" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2600 3100 2700
+Wire Wire Line
+	3100 2700 2850 2700
+Text HLabel 2350 2700 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	2550 2700 2350 2700
+Text HLabel 4700 2400 1    50   UnSpc ~ 0
+VBUS
+Text HLabel 2350 2950 0    50   Input ~ 0
+CC1
+Text HLabel 2350 3250 0    50   Input ~ 0
+CC2
+$Comp
+L Device:D_TVS_x2_AAC D302
+U 1 1 5F5882C2
+P 3100 3550
+F 0 "D302" H 3100 3767 50  0000 C CNN
+F 1 "ESDA25W" H 3100 3676 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2950 3550 50  0001 C CNN
+F 3 "~" H 2950 3550 50  0001 C CNN
+F 4 "ESDA25W" H 3100 3550 50  0001 C CNN "Part"
+	1    3100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3700 3100 3800
+$Comp
+L power:GND #PWR0302
+U 1 1 5F5894D8
+P 3100 3800
+F 0 "#PWR0302" H 3100 3550 50  0001 C CNN
+F 1 "GND" H 3105 3627 50  0000 C CNN
+F 2 "" H 3100 3800 50  0001 C CNN
+F 3 "" H 3100 3800 50  0001 C CNN
+	1    3100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3550 2650 3550
+Wire Wire Line
+	2650 3550 2650 2950
+Wire Wire Line
+	2650 2950 2350 2950
+Wire Wire Line
+	2350 3250 3550 3250
+Wire Wire Line
+	3450 3550 3550 3550
+Wire Wire Line
+	3550 3550 3550 3250
+Connection ~ 3550 3250
+$Comp
+L Interface_USB:STUSB4500QTR U301
+U 1 1 5F589EBC
+P 4800 3450
+F 0 "U301" H 4800 2400 50  0000 C CNN
+F 1 "STUSB4500QTR" H 4800 2300 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 4800 3450 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stusb4500.pdf" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2950 4050 2950
+Connection ~ 2650 2950
+Wire Wire Line
+	3550 3250 4050 3250
+Wire Wire Line
+	4200 3350 4050 3350
+Wire Wire Line
+	4050 3350 4050 3250
+Connection ~ 4050 3250
+Wire Wire Line
+	4050 3250 4200 3250
+Wire Wire Line
+	4200 3050 4050 3050
+Wire Wire Line
+	4050 3050 4050 2950
+Connection ~ 4050 2950
+Wire Wire Line
+	4050 2950 4200 2950
+Wire Wire Line
+	4200 4050 4050 4050
+Wire Wire Line
+	4050 4050 4050 4150
+Wire Wire Line
+	4200 4150 4050 4150
+Connection ~ 4050 4150
+Wire Wire Line
+	4050 4150 4050 4250
+$Comp
+L power:GND #PWR0304
+U 1 1 5F5917BE
+P 4050 4250
+F 0 "#PWR0304" H 4050 4000 50  0001 C CNN
+F 1 "GND" H 4055 4077 50  0000 C CNN
+F 2 "" H 4050 4250 50  0001 C CNN
+F 3 "" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+Text HLabel 4050 3750 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	4050 3750 4200 3750
+Text HLabel 4050 3850 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	4050 3850 4200 3850
+$Comp
+L Device:R R301
+U 1 1 5F593D00
+P 3950 3550
+F 0 "R301" V 3743 3550 50  0000 C CNN
+F 1 "1K" V 3834 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 3550 50  0001 C CNN
+F 3 "~" H 3950 3550 50  0001 C CNN
+	1    3950 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3550 4100 3550
+Wire Wire Line
+	3800 3550 3700 3550
+Wire Wire Line
+	3700 3550 3700 3750
+Text HLabel 3700 3750 3    50   UnSpc ~ 0
+VBUS
+NoConn ~ 4200 2750
+NoConn ~ 4200 3950
+NoConn ~ 5400 3850
+NoConn ~ 5400 3950
+Wire Wire Line
+	4800 4350 4800 4400
+Wire Wire Line
+	4800 4400 4950 4400
+$Comp
+L power:GND #PWR0305
+U 1 1 5F596E38
+P 4950 4400
+F 0 "#PWR0305" H 4950 4150 50  0001 C CNN
+F 1 "GND" V 4955 4272 50  0000 R CNN
+F 2 "" H 4950 4400 50  0001 C CNN
+F 3 "" H 4950 4400 50  0001 C CNN
+	1    4950 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3150 5550 3150
+Text HLabel 6350 2300 0    50   UnSpc ~ 0
+VBUS
+Text HLabel 7050 2300 2    50   Output ~ 0
+VSNK
+Wire Wire Line
+	7050 2300 6950 2300
+$Comp
+L Device:D_Zener D?
+U 1 1 5F5A3BFE
+P 6600 2600
+AR Path="/5F5A3BFE" Ref="D?"  Part="1" 
+AR Path="/5F584CBF/5F5A3BFE" Ref="D303"  Part="1" 
+F 0 "D303" H 6600 2817 50  0000 C CNN
+F 1 "ESDA25P35" H 6600 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 6600 2600 50  0001 C CNN
+F 3 "~" H 6600 2600 50  0001 C CNN
+F 4 "ESDA25P35" H 6600 2725 50  0001 C CNN "Part"
+	1    6600 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 2450 6600 2300
+Connection ~ 6600 2300
+Wire Wire Line
+	6600 2750 6600 2850
+$Comp
+L power:GND #PWR0306
+U 1 1 5F5A698E
+P 6600 2850
+F 0 "#PWR0306" H 6600 2600 50  0001 C CNN
+F 1 "GND" H 6605 2677 50  0000 C CNN
+F 2 "" H 6600 2850 50  0001 C CNN
+F 3 "" H 6600 2850 50  0001 C CNN
+	1    6600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C302
+U 1 1 5F5A7827
+P 4400 1950
+F 0 "C302" V 4148 1950 50  0000 C CNN
+F 1 "1uF" V 4239 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 1800 50  0001 C CNN
+F 3 "~" H 4400 1950 50  0001 C CNN
+	1    4400 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C303
+U 1 1 5F5A8774
+P 4400 2450
+F 0 "C303" V 4148 2450 50  0000 C CNN
+F 1 "1uF" V 4239 2450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 2300 50  0001 C CNN
+F 3 "~" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C301
+U 1 1 5F5AFDAD
+P 4400 1550
+F 0 "C301" V 4148 1550 50  0000 C CNN
+F 1 "1uF" V 4239 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 1400 50  0001 C CNN
+F 3 "~" H 4400 1550 50  0001 C CNN
+	1    4400 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 1550 4550 1550
+Wire Wire Line
+	5100 1550 5100 2550
+Wire Wire Line
+	5000 1950 4550 1950
+Wire Wire Line
+	5000 1950 5000 2550
+Wire Wire Line
+	4700 2550 4700 2450
+Wire Wire Line
+	4700 2450 4550 2450
+Wire Wire Line
+	4800 2550 4800 2100
+Wire Wire Line
+	4800 2100 4050 2100
+Wire Wire Line
+	4700 2450 4700 2400
+Connection ~ 4700 2450
+Wire Wire Line
+	4250 1550 4050 1550
+Wire Wire Line
+	4050 1550 4050 1950
+Wire Wire Line
+	4250 1950 4050 1950
+Connection ~ 4050 1950
+Wire Wire Line
+	4050 1950 4050 2100
+Wire Wire Line
+	4050 2100 4050 2450
+Connection ~ 4050 2100
+Wire Wire Line
+	4250 2450 4050 2450
+Connection ~ 4050 2450
+Wire Wire Line
+	4050 2450 4050 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5F5BE227
+P 4050 2550
+AR Path="/5F5BE227" Ref="#PWR?"  Part="1" 
+AR Path="/5F584CBF/5F5BE227" Ref="#PWR0303"  Part="1" 
+F 0 "#PWR0303" H 4050 2300 50  0001 C CNN
+F 1 "GND" H 4055 2377 50  0000 C CNN
+F 2 "" H 4050 2550 50  0001 C CNN
+F 3 "" H 4050 2550 50  0001 C CNN
+	1    4050 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 2300
+Wire Wire Line
+	6950 2300 6600 2300
+Wire Wire Line
+	6950 3550 6600 3550
+$Comp
+L Device:R R302
+U 1 1 5F5FEBD2
+P 6450 3550
+F 0 "R302" V 6243 3550 50  0000 C CNN
+F 1 "1K" V 6334 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6380 3550 50  0001 C CNN
+F 3 "~" H 6450 3550 50  0001 C CNN
+	1    6450 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3550 5400 3550
+Text HLabel 5550 3350 2    50   Output ~ 0
+POWER_OK2
+Text HLabel 5550 3450 2    50   Output ~ 0
+POWER_OK3
+Wire Wire Line
+	5400 3350 5550 3350
+Wire Wire Line
+	5400 3450 5550 3450
+Text HLabel 5550 4050 2    50   BiDi ~ 0
+GPIO
+Wire Wire Line
+	5550 4050 5400 4050
+Wire Wire Line
+	6950 2300 6950 3550
+Text HLabel 5550 3150 2    50   Input ~ 0
+VBUS_EN_SNK
+Wire Wire Line
+	6350 2300 6600 2300
+$EndSCHEMATC

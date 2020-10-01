@@ -1,0 +1,514 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 21
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4250 1450 550  200 
+U 5F54CE90
+F0 "LED 1" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 1550 50 
+$EndSheet
+$Comp
+L power:+VDC #PWR03
+U 1 1 5F550D09
+P 2500 1250
+F 0 "#PWR03" H 2500 1150 50  0001 C CNN
+F 1 "+VDC" V 2500 1479 50  0000 L CNN
+F 2 "" H 2500 1250 50  0001 C CNN
+F 3 "" H 2500 1250 50  0001 C CNN
+	1    2500 1250
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 5300 1450 550  200 
+U 5F55215C
+F0 "sheet5F552159" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 1550 50 
+$EndSheet
+$Sheet
+S 4250 1900 550  200 
+U 5F552275
+F0 "sheet5F552272" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 2000 50 
+$EndSheet
+$Sheet
+S 5300 1900 550  200 
+U 5F5522C6
+F0 "sheet5F5522C3" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 2000 50 
+$EndSheet
+$Sheet
+S 4250 2350 550  200 
+U 5F552341
+F0 "sheet5F55233E" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 2450 50 
+$EndSheet
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F552AC5
+P 2600 1250
+F 0 "#FLG01" H 2600 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1423 50  0000 C CNN
+F 2 "" H 2600 1250 50  0001 C CNN
+F 3 "~" H 2600 1250 50  0001 C CNN
+	1    2600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F559A59
+P 2500 1400
+F 0 "#PWR04" H 2500 1150 50  0001 C CNN
+F 1 "GND" V 2505 1272 50  0000 R CNN
+F 2 "" H 2500 1400 50  0001 C CNN
+F 3 "" H 2500 1400 50  0001 C CNN
+	1    2500 1400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 1400 2600 1400
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5F55A440
+P 2600 1400
+F 0 "#FLG02" H 2600 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1573 50  0000 C CNN
+F 2 "" H 2600 1400 50  0001 C CNN
+F 3 "~" H 2600 1400 50  0001 C CNN
+	1    2600 1400
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 5300 2350 550  200 
+U 5F55B615
+F0 "sheet5F55B60E" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 2450 50 
+$EndSheet
+$Sheet
+S 4250 2800 550  200 
+U 5F55B618
+F0 "sheet5F55B60F" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 2900 50 
+$EndSheet
+$Sheet
+S 5300 2800 550  200 
+U 5F55B61D
+F0 "sheet5F55B610" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 2900 50 
+$EndSheet
+$Sheet
+S 4250 3250 550  200 
+U 5F55B620
+F0 "sheet5F55B611" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 3350 50 
+$EndSheet
+$Sheet
+S 5300 3250 550  200 
+U 5F55B623
+F0 "sheet5F55B612" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 3350 50 
+$EndSheet
+Wire Wire Line
+	2500 1250 2600 1250
+Text Notes 2900 1200 0    79   ~ 16
++20V
+$Comp
+L power:GND #PWR01
+U 1 1 5F5885C6
+P 2200 1950
+F 0 "#PWR01" H 2200 1700 50  0001 C CNN
+F 1 "GND" H 2205 1777 50  0000 C CNN
+F 2 "" H 2200 1950 50  0001 C CNN
+F 3 "" H 2200 1950 50  0001 C CNN
+	1    2200 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+VDC #PWR02
+U 1 1 5F56A71F
+P 2200 2300
+F 0 "#PWR02" H 2200 2200 50  0001 C CNN
+F 1 "+VDC" V 2200 2529 50  0000 L CNN
+F 2 "" H 2200 2300 50  0001 C CNN
+F 3 "" H 2200 2300 50  0001 C CNN
+	1    2200 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 3350 5200 3350
+Wire Wire Line
+	5200 3350 5200 2900
+Wire Wire Line
+	5300 2900 5200 2900
+Connection ~ 5200 2900
+Wire Wire Line
+	5200 2900 5200 2450
+Wire Wire Line
+	5300 2450 5200 2450
+Connection ~ 5200 2450
+Wire Wire Line
+	5200 2450 5200 2000
+Wire Wire Line
+	5300 2000 5200 2000
+Connection ~ 5200 2000
+Wire Wire Line
+	5200 2000 5200 1550
+Wire Wire Line
+	5300 1550 5200 1550
+Connection ~ 5200 1550
+Wire Wire Line
+	4250 3350 4150 3350
+Wire Wire Line
+	4150 3350 4150 2900
+Wire Wire Line
+	4250 1550 4150 1550
+Connection ~ 4150 1550
+Wire Wire Line
+	4250 2000 4150 2000
+Connection ~ 4150 2000
+Wire Wire Line
+	4150 2000 4150 1550
+Wire Wire Line
+	4250 2450 4150 2450
+Connection ~ 4150 2450
+Wire Wire Line
+	4150 2450 4150 2000
+Wire Wire Line
+	4250 2900 4150 2900
+Connection ~ 4150 2900
+Wire Wire Line
+	4150 2900 4150 2450
+Wire Wire Line
+	5200 1250 4150 1250
+Wire Wire Line
+	5200 1250 5200 1550
+Wire Wire Line
+	4150 1250 4150 1550
+$Sheet
+S 4250 3950 550  200 
+U 5F59A947
+F0 "sheet5F59A93B" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 4050 50 
+$EndSheet
+$Sheet
+S 5300 3950 550  200 
+U 5F59A94A
+F0 "sheet5F59A93C" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 4050 50 
+$EndSheet
+$Sheet
+S 4250 4400 550  200 
+U 5F59A94D
+F0 "sheet5F59A93D" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 4500 50 
+$EndSheet
+$Sheet
+S 5300 4400 550  200 
+U 5F59A950
+F0 "sheet5F59A93E" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 4500 50 
+$EndSheet
+$Sheet
+S 4250 4850 550  200 
+U 5F59A953
+F0 "sheet5F59A93F" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 4950 50 
+$EndSheet
+$Sheet
+S 5300 4850 550  200 
+U 5F59A956
+F0 "sheet5F59A940" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 4950 50 
+$EndSheet
+$Sheet
+S 4250 5300 550  200 
+U 5F59A959
+F0 "sheet5F59A941" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 5400 50 
+$EndSheet
+$Sheet
+S 5300 5300 550  200 
+U 5F59A95C
+F0 "sheet5F59A942" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 5400 50 
+$EndSheet
+$Sheet
+S 4250 5750 550  200 
+U 5F59A95F
+F0 "sheet5F59A943" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 4250 5850 50 
+$EndSheet
+$Sheet
+S 5300 5750 550  200 
+U 5F59A962
+F0 "sheet5F59A944" 50
+F1 "strip.sch" 50
+F2 "VDC" I L 5300 5850 50 
+$EndSheet
+Wire Wire Line
+	5300 5850 5200 5850
+Wire Wire Line
+	5200 5850 5200 5400
+Wire Wire Line
+	5300 5400 5200 5400
+Connection ~ 5200 5400
+Wire Wire Line
+	5200 5400 5200 4950
+Wire Wire Line
+	5300 4950 5200 4950
+Connection ~ 5200 4950
+Wire Wire Line
+	5200 4950 5200 4500
+Wire Wire Line
+	5300 4500 5200 4500
+Connection ~ 5200 4500
+Wire Wire Line
+	5200 4500 5200 4050
+Wire Wire Line
+	5300 4050 5200 4050
+Connection ~ 5200 4050
+Wire Wire Line
+	4250 5850 4150 5850
+Wire Wire Line
+	4150 5850 4150 5400
+Wire Wire Line
+	4250 4050 4150 4050
+Connection ~ 4150 4050
+Wire Wire Line
+	4250 4500 4150 4500
+Connection ~ 4150 4500
+Wire Wire Line
+	4150 4500 4150 4050
+Wire Wire Line
+	4250 4950 4150 4950
+Connection ~ 4150 4950
+Wire Wire Line
+	4150 4950 4150 4500
+Wire Wire Line
+	4250 5400 4150 5400
+Connection ~ 4150 5400
+Wire Wire Line
+	4150 5400 4150 4950
+Wire Wire Line
+	5200 3750 4150 3750
+Wire Wire Line
+	5200 3750 5200 4050
+Wire Wire Line
+	4150 3750 4150 4050
+Connection ~ 2600 1250
+Wire Wire Line
+	2600 1250 3700 1250
+Connection ~ 4150 1250
+Wire Wire Line
+	3700 1250 3700 3750
+Wire Wire Line
+	3700 3750 4150 3750
+Connection ~ 3700 1250
+Wire Wire Line
+	3700 1250 4150 1250
+Connection ~ 4150 3750
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F5AE7EC
+P 6900 1550
+F 0 "H1" H 7000 1599 50  0000 L CNN
+F 1 "PCB Mounting Hole" H 7000 1508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6900 1550 50  0001 C CNN
+F 3 "~" H 6900 1550 50  0001 C CNN
+	1    6900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F5AED33
+P 6900 1850
+F 0 "H2" H 7000 1899 50  0000 L CNN
+F 1 "PCB Mounting Hole" H 7000 1808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6900 1850 50  0001 C CNN
+F 3 "~" H 6900 1850 50  0001 C CNN
+	1    6900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F5AEF60
+P 6900 2150
+F 0 "H3" H 7000 2199 50  0000 L CNN
+F 1 "PCB Mounting Hole" H 7000 2108 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6900 2150 50  0001 C CNN
+F 3 "~" H 6900 2150 50  0001 C CNN
+	1    6900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F5AF1FF
+P 6900 2450
+F 0 "H4" H 7000 2499 50  0000 L CNN
+F 1 "PCB Mounting Hole" H 7000 2408 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6900 2450 50  0001 C CNN
+F 3 "~" H 6900 2450 50  0001 C CNN
+	1    6900 2450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3900 1150 3900 6100
+Wire Notes Line
+	3900 6100 6250 6100
+Wire Notes Line
+	6250 6100 6250 1150
+Wire Notes Line
+	6250 1150 3900 1150
+Text Notes 3900 1100 0    50   ~ 0
+10 rows * 12 LEDs
+Wire Wire Line
+	6900 1650 6650 1650
+Wire Wire Line
+	6900 1950 6650 1950
+Wire Wire Line
+	6900 2250 6650 2250
+Wire Wire Line
+	6900 2550 6650 2550
+$Comp
+L power:GND #PWR05
+U 1 1 5F5B4572
+P 6650 1500
+F 0 "#PWR05" H 6650 1250 50  0001 C CNN
+F 1 "GND" V 6655 1372 50  0000 R CNN
+F 2 "" H 6650 1500 50  0001 C CNN
+F 3 "" H 6650 1500 50  0001 C CNN
+	1    6650 1500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6650 1500 6650 1650
+Connection ~ 6650 1650
+Wire Wire Line
+	6650 1650 6650 1950
+Connection ~ 6650 1950
+Wire Wire Line
+	6650 1950 6650 2250
+Connection ~ 6650 2250
+Wire Wire Line
+	6650 2250 6650 2550
+Wire Notes Line
+	6500 1150 6500 2700
+Wire Notes Line
+	6500 2700 7900 2700
+Wire Notes Line
+	7900 2700 7900 1150
+Wire Notes Line
+	7900 1150 6500 1150
+Text Notes 6500 1100 0    50   ~ 0
+PCB mount
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5F5B9A25
+P 6900 3200
+F 0 "H5" H 7000 3246 50  0000 L CNN
+F 1 "Mounting Hole" H 7000 3155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6900 3200 50  0001 C CNN
+F 3 "~" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5F5BB8EC
+P 6900 3450
+F 0 "H6" H 7000 3496 50  0000 L CNN
+F 1 "Mounting Hole" H 7000 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6900 3450 50  0001 C CNN
+F 3 "~" H 6900 3450 50  0001 C CNN
+	1    6900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5F5BBBCD
+P 6900 3700
+F 0 "H7" H 7000 3746 50  0000 L CNN
+F 1 "Mounting Hole" H 7000 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6900 3700 50  0001 C CNN
+F 3 "~" H 6900 3700 50  0001 C CNN
+	1    6900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 5F5BBED0
+P 6900 3950
+F 0 "H8" H 7000 3996 50  0000 L CNN
+F 1 "Mounting Hole" H 7000 3905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6900 3950 50  0001 C CNN
+F 3 "~" H 6900 3950 50  0001 C CNN
+	1    6900 3950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6500 3050 6500 4150
+Wire Notes Line
+	6500 4150 7900 4150
+Wire Notes Line
+	7900 4150 7900 3050
+Wire Notes Line
+	7900 3050 6500 3050
+Text Notes 6500 3000 0    50   ~ 0
+ALU plate mounting holes
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5F6F4864
+P 2600 1950
+F 0 "J1" H 2680 1992 50  0000 L CNN
+F 1 "Conn_01x01" H 2680 1901 50  0000 L CNN
+F 2 "ViktorStiskala:PAD_conn_oval" H 2600 1950 50  0001 C CNN
+F 3 "~" H 2600 1950 50  0001 C CNN
+	1    2600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5F6F4DCB
+P 2600 2300
+F 0 "J2" H 2680 2342 50  0000 L CNN
+F 1 "Conn_01x01" H 2680 2251 50  0000 L CNN
+F 2 "ViktorStiskala:PAD_conn_oval" H 2600 2300 50  0001 C CNN
+F 3 "~" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1950 2400 1950
+Wire Wire Line
+	2200 2300 2400 2300
+$EndSCHEMATC

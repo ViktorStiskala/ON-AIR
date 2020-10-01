@@ -1,0 +1,9 @@
+*.sch-bak
+*.kicad_pcb-bak
+fp-info-cache
+*.log
+*-cache.lib
+gerber/
+gerber.zip
+*.dsn
+*.ses
