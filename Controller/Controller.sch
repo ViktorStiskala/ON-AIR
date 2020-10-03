@@ -16,73 +16,71 @@ $EndDescr
 $Comp
 L RF_Module:ESP-12F U101
 U 1 1 5D0D463B
-P 1850 2150
-F 0 "U101" H 1350 3050 50  0000 L CNN
-F 1 "ESP-12F" H 1350 2950 50  0000 L CNN
-F 2 "RF_Module:ESP-12E" H 1850 2150 50  0001 C CNN
-F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 1500 2250 50  0001 C CNN
-	1    1850 2150
+P -900 -200
+F 0 "U101" H -1400 700 50  0000 L CNN
+F 1 "ESP-12F" H -1400 600 50  0000 L CNN
+F 2 "RF_Module:ESP-12E" H -900 -200 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H -1250 -100 50  0001 C CNN
+	1    -900 -200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 1350 1850 1200
+	-900 -1000 -900 -1150
 Wire Wire Line
-	3000 3050 2150 3050
+	250  700  -600 700 
 Wire Wire Line
-	1850 3050 1850 2850
+	-900 700  -900 500 
 $Comp
 L Device:C C101
 U 1 1 5D0D61DB
-P 3000 2100
-F 0 "C101" H 3115 2146 50  0000 L CNN
-F 1 "100nF" H 3115 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 1950 50  0001 C CNN
-F 3 "~" H 3000 2100 50  0001 C CNN
-F 4 "CL10B104JB8NNNC" H 3000 2100 50  0001 C CNN "Part"
-	1    3000 2100
+P 250 -250
+F 0 "C101" H 365 -204 50  0000 L CNN
+F 1 "100nF" H 365 -295 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 288 -400 50  0001 C CNN
+F 3 "~" H 250 -250 50  0001 C CNN
+F 4 "CL10B104JB8NNNC" H 250 -250 50  0001 C CNN "Part"
+	1    250  -250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 1200 3000 1950
+	250  -1150 250  -400
 Wire Wire Line
-	3000 3050 3000 2250
+	250  700  250  -100
 Wire Wire Line
-	1850 1200 2150 1200
+	-900 -1150 -600 -1150
 $Comp
 L power:+3V3 #PWR0102
 U 1 1 5D0D771F
-P 2150 1050
-F 0 "#PWR0102" H 2150 900 50  0001 C CNN
-F 1 "+3V3" H 2165 1223 50  0000 C CNN
-F 2 "" H 2150 1050 50  0001 C CNN
-F 3 "" H 2150 1050 50  0001 C CNN
-	1    2150 1050
+P -600 -1300
+F 0 "#PWR0102" H -600 -1450 50  0001 C CNN
+F 1 "+3V3" H -585 -1127 50  0000 C CNN
+F 2 "" H -600 -1300 50  0001 C CNN
+F 3 "" H -600 -1300 50  0001 C CNN
+	1    -600 -1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 1050 2150 1200
-Connection ~ 2150 1200
+	-600 -1300 -600 -1150
+Connection ~ -600 -1150
 Wire Wire Line
-	2150 1200 3000 1200
+	-600 -1150 250  -1150
 $Comp
 L power:GND #PWR0103
 U 1 1 5D0D7E0D
-P 2150 3200
-F 0 "#PWR0103" H 2150 2950 50  0001 C CNN
-F 1 "GND" H 2155 3027 50  0000 C CNN
-F 2 "" H 2150 3200 50  0001 C CNN
-F 3 "" H 2150 3200 50  0001 C CNN
-	1    2150 3200
+P -600 850
+F 0 "#PWR0103" H -600 600 50  0001 C CNN
+F 1 "GND" H -595 677 50  0000 C CNN
+F 2 "" H -600 850 50  0001 C CNN
+F 3 "" H -600 850 50  0001 C CNN
+	1    -600 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 3050 2150 3200
-Connection ~ 2150 3050
+	-600 700  -600 850 
+Connection ~ -600 700 
 Wire Wire Line
-	2150 3050 1850 3050
-Text Label 1250 1550 2    50   ~ 0
-ESP_RST
-Text Label 3950 1500 2    50   ~ 0
+	-600 700  -900 700 
+Text Label -1500 -800 2    50   ~ 0
 ESP_RST
 $Comp
 L Device:R R102
@@ -112,7 +110,7 @@ Wire Wire Line
 	4500 1500 4750 1500
 Wire Wire Line
 	4750 1500 4750 1400
-Text Label 1250 1750 2    50   ~ 0
+Text Label -1500 -600 2    50   ~ 0
 ESP_EN
 $Comp
 L Device:R R103
@@ -144,7 +142,7 @@ Wire Wire Line
 	4750 1950 4750 1850
 Text Label 3950 1950 2    50   ~ 0
 ESP_EN
-Text Label 1250 2450 2    50   ~ 0
+Text Label -1500 100  2    50   ~ 0
 ESP_GP0
 $Comp
 L Device:R R104
@@ -176,7 +174,7 @@ Wire Wire Line
 	4750 2400 4750 2300
 Text Label 3950 2400 2    50   ~ 0
 ESP_GP0
-Text Label 2450 2450 0    50   ~ 0
+Text Label -300 100  0    50   ~ 0
 ESP_GP15
 $Comp
 L Device:R R105
@@ -206,8 +204,6 @@ F 3 "~" H 5950 1700 50  0001 C CNN
 	1    5950 1500
 	1    0    0    -1  
 $EndComp
-Text Label 5600 1500 2    50   ~ 0
-ESP_RST
 Wire Wire Line
 	5750 1500 5600 1500
 Wire Wire Line
@@ -237,12 +233,12 @@ F 3 "" H 5950 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5750 1850 2    50   ~ 0
-ESP_RST
-Text Label 2450 1650 0    50   ~ 0
+ESP_EN
+Text Label -300 -700 0    50   ~ 0
 ESP_TX
 Text Label 5750 1950 2    50   ~ 0
 ESP_TX
-Text Label 2450 1850 0    50   ~ 0
+Text Label -300 -500 0    50   ~ 0
 ESP_RX
 Text Label 5750 2050 2    50   ~ 0
 ESP_RX
@@ -258,7 +254,7 @@ F 3 "" H 5250 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5750 2250 2    50   ~ 0
-ESP_GP0
+ESP_IO0
 Wire Wire Line
 	5250 2150 5250 2050
 Wire Wire Line
@@ -326,13 +322,13 @@ F 3 "" H 4750 3200 50  0001 C CNN
 	1    4750 3200
 	-1   0    0    1   
 $EndComp
-Text Label 2450 1750 0    50   ~ 0
+Text Label -300 -600 0    50   ~ 0
 ESP_GP2
 Text Label 3950 2850 2    50   ~ 0
 ESP_GP2
-Text Label 2450 2550 0    50   ~ 0
+Text Label -300 200  0    50   ~ 0
 ESP_RST
-Text Label 2450 1550 0    50   ~ 0
+Text Label -300 -800 0    50   ~ 0
 ESP_GP0
 $Comp
 L power:+3V3 #PWR0110
@@ -532,11 +528,11 @@ F 3 "~" H 1450 7250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 2350 5750 2350
-Text Label 2450 2150 0    50   ~ 0
+Text Label -300 -200 0    50   ~ 0
 GP_PWM
-Text Label 2450 2050 0    50   ~ 0
+Text Label -300 -300 0    50   ~ 0
 SCL
-Text Label 2450 1950 0    50   ~ 0
+Text Label -300 -400 0    50   ~ 0
 SDA
 $Comp
 L Device:R R110
@@ -684,9 +680,9 @@ Text Label 8800 2300 2    50   ~ 0
 POK2
 Text Label 8800 2700 2    50   ~ 0
 POK3
-Text Label 2450 2250 0    50   ~ 0
+Text Label -300 -100 0    50   ~ 0
 POK2
-Text Label 2450 2350 0    50   ~ 0
+Text Label -300 0    0    50   ~ 0
 POK3
 Text Label 2250 3950 0    50   ~ 0
 VIN
@@ -850,12 +846,12 @@ Wire Wire Line
 	3250 6550 3250 6650
 Wire Wire Line
 	3250 6650 3000 6650
-NoConn ~ 1250 1950
-NoConn ~ 1250 2150
-NoConn ~ 1250 2250
-NoConn ~ 1250 2350
-NoConn ~ 1250 2550
-NoConn ~ 1250 2650
+NoConn ~ -1500 -400
+NoConn ~ -1500 -200
+NoConn ~ -1500 -100
+NoConn ~ -1500 0   
+NoConn ~ -1500 200 
+NoConn ~ -1500 300 
 Wire Wire Line
 	5700 3400 5850 3400
 Text Label 6800 3500 2    50   ~ 0
@@ -909,4 +905,19 @@ Text Label 9800 5350 0    50   ~ 0
 GND_OUT
 Text Label 5850 3400 0    50   ~ 0
 GND_OUT
+$Comp
+L RF_Module:ESP32-S2-WROVER U?
+U 1 1 5F860BC3
+P 1850 2150
+F 0 "U?" H 1850 3531 50  0000 C CNN
+F 1 "ESP32-S2-WROVER" H 1850 3440 50  0000 C CNN
+F 2 "RF_Module:ESP32-S2-WROVER" H 2600 1000 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf" H 1550 1350 50  0001 C CNN
+	1    1850 2150
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1500 2    50   ~ 0
+ESP_EN
+Text Label 3950 1500 2    50   ~ 0
+ESP_EN
 $EndSCHEMATC

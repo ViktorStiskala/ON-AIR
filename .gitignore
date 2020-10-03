@@ -7,3 +7,6 @@ gerber/
 gerber.zip
 *.dsn
 *.ses
+*.backup
+_autosave-*
+*-backups/
