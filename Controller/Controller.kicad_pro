@@ -85,8 +85,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_clearance": "ignore",
-        "silk_over_pad": "error",
+        "silk_over_copper": "error",
+        "silk_overlap": "error",
         "skew_out_of_range": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -386,7 +386,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.8,
         "via_diameter": 1.2,
-        "via_drill": 0.6,
+        "via_drill": 0.4,
         "wire_width": 6.0
       },
       {
@@ -406,7 +406,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3,
         "via_diameter": 1.0,
-        "via_drill": 0.5,
+        "via_drill": 0.4,
         "wire_width": 6.0
       }
     ],
@@ -434,6 +434,10 @@
       "default_text_size": 50.0,
       "default_wire_thickness": 6.0,
       "field_names": [],
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
       "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.3
     },
@@ -444,7 +448,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -452,20 +456,16 @@
   },
   "sheets": [
     [
-      "32c8e2f9-b73c-43f8-af77-cb6a17c492f4",
+      "e223de84-6141-4718-8831-f4f655045ccb",
       ""
-    ],
-    [
-      "45d8f738-3aa4-4d8e-a3e6-476b02bba843",
-      "USB-C PD"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f553a1c",
-      "Voltage regulator"
     ],
     [
       "84dc0b0d-3058-4877-a729-17a10c5b9579",
       "Temp sensor"
+    ],
+    [
+      "00000000-0000-0000-0000-00005f553a1c",
+      "Voltage regulator"
     ]
   ],
   "text_variables": {

@@ -420,8 +420,8 @@
   (junction (at 167.64 58.42) (diameter 1.016) (color 0 0 0 0))
   (junction (at 176.53 58.42) (diameter 1.016) (color 0 0 0 0))
 
-  (no_connect (at 106.68 100.33))
   (no_connect (at 137.16 97.79))
+  (no_connect (at 106.68 100.33))
   (no_connect (at 137.16 100.33))
 
   (wire (pts (xy 59.69 82.55) (xy 90.17 82.55))
